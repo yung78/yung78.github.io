@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <title>Курсовая работа</title>
+      <meta charset="utf-8"/>
+      <link rel="stylesheet" href="desktop.css">
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup__content">
+        <h2>ваш фидбек</h2>
+        <div class="popup__line"></div>
+        <form class="popup__form">
+          <label class="site__visits">Как часто вы заходите на сайт?
+            <select>
+              <option value="1">Почти каждый день</option>
+              <option value="2">Раз в неделю</option>
+              <option value="3">Раз в месяц</option>
+            </select>
+          </label> 
+          <label class="sign__in">Вы подписаны на e-mail рассылку?</label>
+          <div class="radiobutton">
+            <label for="radio1" class="radio-group">
+              <input type="radio" id="radio1" name="yes_no" checked>
+              <span class="radio-group-text">Да</span>
+            </label>
+            <label for="radio2" class="radio-group">
+              <input type="radio" id="radio2" name="yes_no">
+              <span class="radio-group-text">Нет</span>
+            </label>
+          </div>
+          <label for="textarea" class="ask__content">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+          <textarea class="textarea__field" id="textarea" placeholder="Может, больше рецептов?"></textarea>
+          <button class="send__button">отправить</button>
+        </form>
+        <button class="popup__close" type="button">
+          <svg class="close__svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441">
+            <path stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 
+            1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 
+            49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 
+            51.067 51.09 1.318l169.246 169.246z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <a class="logo__href" href="#"><div class="logo"></div></a>
+        <nav class="main__menu">
+          <a class="menu__item" href="#0">ГЛАВНАЯ</a>
+          <a class="menu__item" href="#0">ПОСТЫ</a>
+          <a class="menu__item" href="#0">СТАТЬИ</a>
+          <a class="menu__item" href="#0">ТЭГИ</a>
+          <a class="menu__item" href="#0">ТЕМЫ</a>
+          <a class="menu__item" href="#0">КОНТАКТЫ</a>
+        </nav>
+        <div class="first__header">
+          <h1 class="header__text">
+            БЛОГ О ТВОРЧЕСТВЕ, СПОРТЕ,<br> И ОБРАЗЕ ЖИЗНИ
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="trand__section">
+        <div class="delimeter">
+          <h2 class="delimeter__text">
+            <a href="#">СЕЙЧАС В ТРЕНДЕ</a>
+          </h2>
+          <div class="line"></div>
+        </div>
+        <div class="trands">
+          <div class="trand">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/trend1.jpg" class="trand_img" alt="trand_img1">
+            <div class="trand_content">
+              <ul>
+                <li>
+                  <a href="#" class="tag">lifestyle</a>
+                </li>
+                <li>
+                  <a href="#" class="tag">interior</a>
+                </li>
+              </ul>
+              <h3>
+                <a href="#">СЕЙЧАС В ТРЕНДЕ: САД <br> НА ПОДОКОННИКЕ</a>
+              </h3>
+            </div>
+          </div>
+          <div class="trand">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/trend2.jpg" class="trand_img" alt="trand_img2">
+            <div class="trand_content">
+              <ul>
+                <li>
+                  <a href="#" class="tag">food</a>
+                </li>
+              </ul>
+              <h3>
+                <a href="#">СЫРЫ НА КРАСИВЫХ КАРТИНКАХ ИЗ ИНТЕРНЕТА: КАКИЕ ОНИ НА ВКУС?</a>
+              </h3>
+            </div>
+          </div>
+          <div class="trand">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/trend3.jpg" class="trand_img" alt="trand_img3">
+            <div class="trand_content">
+              <ul>
+                <li>
+                  <a href="#" class="tag">lifestyle</a>
+                </li>
+                <li>
+                  <a href="#" class="tag">travel</a>
+                </li>
+              </ul>
+              <h3>
+                <a href="#">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</a>
+              </h3>
+            </div>  
+          </div>
+          <div class="trand">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/trend4.jpg" class="trand_img" alt="trand_img4">
+            <div class="trand_content">
+              <ul>
+                <li>
+                  <a href="#" class="tag">food</a>
+                </li>
+                <li>
+                  <a href="#" class="tag">health</a>
+                </li>
+              </ul>
+              <h3>
+                <a href="#">СЕЙЧАС В ТРЕНДЕ: CКОЛЬКО ВИТАМИНА C В ЛИМОНАХ?</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <aside class="side__bar">
+        <section class="new__posts">
+            <h2>
+              <a href="#">новые посты</a>
+            </h2>
+          <div class="aside__line"></div>
+          <article class="new__post">
+            <div class="image">
+              <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/2.jpg" alt="post_image1">
+            </div>
+            <div class="post__content">
+              <time datetime="2019-06-14 12:00">14 июня 2019</time>
+              <a href="#">
+                <h3>
+                  10 мест, ради которых стоит проснуться
+                </h3>
+              </a>
+            </div>
+          </article>
+          <article class="new__post">
+            <div class="image">
+              <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/151.jpg" alt="post_image2">
+            </div>
+            <div class="post__content">
+              <time datetime="2019-06-14 12:00">14 июня 2019</time>
+              <a href="#" >
+                <h3 class="krivo2">
+                  Йога для домашних
+                </h3>
+              </a>
+            </div>
+          </article>
+          <article class="new__post">
+            <div class="image">
+              <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/45.jpg" alt="post_image3">
+            </div>
+            <div class="post__content">
+              <time datetime="2019-06-14 12:00">14 июня 2019</time>
+              <a href="#">
+                <h3 class="krivo2">
+                  как мы превратили классное место в балкон
+                </h3>
+              </a>
+            </div>
+          </article>
+          <article class="new__post">
+            <div class="image">
+              <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/501.jpg" alt="post_image4">
+            </div>
+            <div class="post__content">
+              <time datetime="2019-06-14 12:00">14 июня 2019</time>
+              <a href="#">
+                <h3 class="krivo2">
+                  Кулинарный подход к науке
+                </h3>
+              </a>
+            </div>
+          </article>
+          <article class="new__post">
+            <div class="image">
+              <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/7.jpg" alt="post_image5">
+            </div>
+            <div class="post__content">
+              <time datetime="2019-06-14 12:00">14 июня 2019</time>
+              <a href="#">
+                <h3 class="krivo2">
+                  лучшие прически для распущенных волос
+                </h3>
+              </a>
+            </div>
+          </article>
+          <div class="search__bar">
+            <form>
+              <input type="search" class="searchfield" placeholder="Найти...">
+              <button class="search__button">
+                <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/3caff2b15a1bb16c3b0e37464521249f81f00c21/sources/svg/search.svg" alt="serch">
+              </button>
+            </form>
+          </div>
+        </section>
+        
+        <section class="mail__send">
+          <div class="mailing">
+            <a href="#">
+              <label for="mail__field"><h2>рассылка</h2></label>
+            </a>
+            <div class="line"></div>
+            <form class="mailing__form">
+              <input id="mail__field" class="mail__field" type="email" placeholder="Ваш email-адрес">
+              <button class="mail__button">подписаться</button>
+            </form>
+          </div>
+        </section>
+        
+        <section class="all_tags">
+          <a href="#">
+            <h2>
+              теги
+            </h2>
+          </a>
+          <div class="line"></div>
+          <div class="tags">
+            <ul>
+              <li>
+                <a href="#" class="tag__list">fashion</a>
+              </li>
+              <li>
+                <a href="#" class="tag__list">music</a>
+              </li>
+              <li>
+                <a href="#" class="tag__list">lifestyle</a>
+              </li>
+                <li>
+                <a href="#" class="tag__list">art</a>
+              </li>
+              <li>
+                <a href="#" class="tag__list">interior</a>
+              </li>
+              <li>
+                <a href="#" class="tag__list">travel</a>
+              </li>
+              <li>
+                <a href="#" class="tag__list">food</a>
+              </li>
+              <li>
+                <a href="#" class="tag__list">health</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="themes">
+          <a href="#">
+            <h2>
+              темы
+            </h2>
+          </a>
+          <div class="line"></div>
+          <ul>
+            <li>
+              <a href="#" class="theme">Красота <sup>12</sup></a>
+            </li>
+            <li>
+              <a href="#" class="theme">Здоровье <sup>4</sup></a>
+            </li>
+            <li>
+              <a href="#" class="theme">Образ жизни <sup>145</sup></a>
+            </li>
+            <li>
+              <a href="#" class="theme">Музыка <sup>28</sup></a>
+            </li>
+            <li>
+              <a href="#" class="theme">Спорт <sup>62</sup></a>
+            </li>
+            <li>
+              <a href="#" class="theme">Йога <sup>8</sup></a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+      
+      <section class="articles">
+        <article class="main__content">
+          <div class="image">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/last-post1.jpg" alt="image1">
+          </div>
+          <div class="article__content">
+            <ul>
+              <li>
+                <a href="#" class="tag">travel</a>
+              </li>
+              <li>
+                <a href="#" class="tag">health</a>
+              </li>
+            </ul>
+            <h3>
+              <a href="#">10 мест, ради которых стоит проснуться на рассвете</a>
+            </h3>
+            <footer>
+              <p>
+                <time datetime="2019-06-10 19:00">10 июня 2019</time>
+                Неизвестный автор
+              </p>
+            </footer>
+            <p>
+              Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?
+            </p>
+          </div>
+        </article>
+        
+        <article class="main__content">
+          <div class="image">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/last-post2.jpg" alt="image2">
+          </div>
+          <div class="article__content">
+            <ul>
+              <li>
+                <a href="#" class="tag">health</a>
+              </li>
+              <li>
+                <a href="#" class="tag">lifestyle</a>
+              </li>
+            </ul>
+            <h3>
+              <a href="#">Йога для начинающих в домашних условиях</a>
+            </h3>
+            <footer>
+              <p>
+                <time datetime="2019-06-10 19:00">10 июня 2019</time>
+                Неизвестный автор
+              </p>
+            </footer>
+            <p>
+              Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.
+            </p>
+          </div>
+        </article>
+        
+        <article class="main__content">
+          <div class="image">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/last-post3.jpg" alt="image3">
+          </div>
+          <div class="article__content">
+            <ul>
+              <li>
+                <a href="#" class="tag">music</a>
+              </li>
+            </ul>
+            <h3>
+              <a href="#">Лучшие музыкальные фестивали этого лета</a>
+            </h3>
+            <footer>
+              <p>
+                <time datetime="2019-06-10 19:00">10 июня 2019</time>
+                Неизвестный автор
+              </p>
+            </footer>
+            <p>
+              Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
+            </p>
+            <p class="indentation">
+              Мы составили список лучших летних фестивалей по всему миру.
+            </p>
+          </div>
+        </article>
+        
+        <article id="krivo" class="main__content">
+          <div class="image">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/last-post4.jpg" alt="image4">
+          </div>
+          <div class="article__content">
+            <ul>
+              <li>
+                <a href="#" class="tag">lifestyle</a>
+              </li>
+              <li>
+                <a href="#" class="tag">food</a>
+              </li>
+            </ul>
+            <h3>
+              <a href="#">Наукоёмкий подход к кулинарии</a>
+            </h3>
+            <footer>
+              <p>
+                <time datetime="2019-06-10 19:00">10 июня 2019</time>
+                Неизвестный автор
+              </p>
+            </footer>
+            <p>
+              Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику,<br> химию и микробиологию еды.
+            </p>
+          </div>
+        </article>
+
+        <article class="main__content">
+          <div class="image">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/last-post5.jpg" alt="image5">
+          </div>
+          <div class="article__content">
+            <ul>
+              <li>
+                <a href="#" class="tag">lifestyle</a>
+              </li>
+              <li>
+                <a href="#" class="tag">interior</a>
+              </li>
+              <li>
+                <a href="#" class="tag">art</a>
+              </li>
+            </ul>
+            <h3>
+              <a href="#">делаем модные принты на подушках для интерьера</a>
+            </h3>
+            <footer>
+              <p>
+                <time datetime="2019-06-10 19:00">10 июня 2019</time>
+                Неизвестный автор
+              </p>
+            </footer>
+            <p>
+              Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.
+            </p>
+          </div>
+        </article>  
+      </section>
+
+      <section class="merchandise">
+        <div class="delimeter__merch">
+          <h2 class="delimeter__merch__text">
+            <a href="#">НАШИ ИЗДЕЛИЯ</a>
+          </h2>
+          <div class="line"></div>
+        </div>
+        <div class="articles__content">
+          <article class="merch">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/shop-item-desk1.jpg" alt="shop_img1">
+            <div class="description">
+              <h3>
+                Подушки на диван
+              </h3>
+              <p>
+                Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a>.
+              </p>
+              <div class="ex_price">
+                1000 ₽
+              </div>
+              <div class="price">
+                800 ₽
+              </div>
+              <form action="#">
+                <button class="shop__button">В магазин</button>
+              </form>
+            </div>
+          </article>
+        
+          <article class="merch">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/shop-item-desk2.jpg" alt="shop_img2">
+            <div class="description">
+              <h3>
+                Кукла «Зайчик»
+              </h3>
+              <p>
+                Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#">весенняя серия постов</a> в блоге и несколько подкастов.
+              </p>
+              <div class="ex_price">
+                &#160;
+              </div>
+              <div class="price">
+                3500 ₽
+              </div>
+              <form action="#">
+                <button class="shop__button">В магазин</button>
+              </form>
+            </div>
+          </article>
+          
+          <article class="merch">
+            <img src="https://raw.githubusercontent.com/netology-code/fpymq-diploma/master/sources/img/shop-item-desk3.jpg" alt="shop_img3">
+            <div class="description">
+              <h3>
+                Шестиугольная рамка
+              </h3>
+              <p>
+                Необычная рамка для украшения дома из видео <a href="#">«Как сделать рамку из подручных средств за 30 минут»</a> 
+              </p>
+              <div class="ex_price">
+                500 ₽
+              </div>
+              <div class="price">
+                400 ₽
+              </div>
+              <form action="#">
+                <button class="shop__button">В магазин</button>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <address>
+        <div class="hrefs">
+          <a href="#">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" 
+                    stroke-linejoin="round" stroke-width="1.8" transform="translate(1 1)">
+                <circle cx="9" cy="9" r="9"/>
+                <path d="M5.4.9c2.1222 2.3565 3.7222 4.7865 4.8 7.29 1.0778 2.5035 1.8778 5.4735 2.4 8.91"/>
+                <path d="M.201 8.0853c3.4904.1103 6.5893-.4006 9.2966-1.5327C12.257 5.399 14.191 4.1147 15.3 2.7M3.6 15.3c1.8876-3.0496 4.9253-4.963 7.4854-5.748 2.8247-.866 4.3048-.6496 6.9146.2087"/>
+              </g>
+            </svg>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 310.05 310.05" style="enable-background:new 0 0 310.05 310.05;"
+                  xml:space="preserve">
+              <g id="XMLID_798_">
+                  <path id="XMLID_799_" d="M245.265,31.772C223.923,11.284,194.388,0,162.101,0c-49.32,0-79.654,20.217-96.416,37.176
+c-20.658,20.9-32.504,48.651-32.504,76.139c0,34.513,14.436,61.003,38.611,70.858c1.623,0.665,3.256,1,4.857,1
+c5.1,0,9.141-3.337,10.541-8.69c0.816-3.071,2.707-10.647,3.529-13.936c1.76-6.495,0.338-9.619-3.5-14.142
+c-6.992-8.273-10.248-18.056-10.248-30.788c0-37.818,28.16-78.011,80.352-78.011c41.412,0,67.137,23.537,67.137,61.425
+c0,23.909-5.15,46.051-14.504,62.35c-6.5,11.325-17.93,24.825-35.477,24.825c-7.588,0-14.404-3.117-18.705-8.551
+c-4.063-5.137-5.402-11.773-3.768-18.689c1.846-7.814,4.363-15.965,6.799-23.845c4.443-14.392,8.643-27.985,8.643-38.83
+c0-18.55-11.404-31.014-28.375-31.014c-21.568,0-38.465,21.906-38.465,49.871c0,13.715,3.645,23.973,5.295,27.912
+c-2.717,11.512-18.865,79.953-21.928,92.859c-1.771,7.534-12.44,67.039,5.219,71.784c19.841,5.331,37.576-52.623,39.381-59.172
+c1.463-5.326,6.582-25.465,9.719-37.845c9.578,9.226,25,15.463,40.006,15.463c28.289,0,53.73-12.73,71.637-35.843
+c17.367-22.418,26.932-53.664,26.932-87.978C276.869,77.502,265.349,51.056,245.265,31.772z"/>
+              </g>
+            </svg>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;"
+                    xml:space="preserve">
+                <g id="XMLID_828_">
+                  <path id="XMLID_829_" d="M249.775,236.928c-1.613-0.873-3.58-0.789-5.119,0.221c-14.15,9.295-28.469,14.007-42.557,14.007
+c-7.678,0-14.285-1.725-20.236-5.297c-4.023-2.366-6.688-5.399-8.139-9.257c-1.107-2.978-2.43-10.9-2.43-31.739v-71.945h66.168
+c2.762,0,5-2.239,5-5V80.818c0-2.762-2.238-5-5-5h-66.168V5c0-2.762-2.238-5-5-5h-42.684c-2.523,0-4.652,1.881-4.961,4.386
+c-1.836,14.831-5.201,27.143-10.01,36.601c-4.744,9.381-11.141,17.526-19.018,24.216c-7.842,6.687-17.451,11.899-28.563,15.491
+c-2.064,0.667-3.463,2.589-3.463,4.758v42.466c0,2.761,2.238,5,5,5h28.168v100.237c0,14.492,1.523,25.36,4.656,33.218
+c3.158,7.955,8.83,15.496,16.863,22.418c7.922,6.801,17.568,12.104,28.67,15.758c10.971,3.618,23.73,5.452,37.922,5.452
+c12.416,0,24.141-1.269,34.85-3.772c10.73-2.514,22.779-6.91,35.811-13.065c1.75-0.826,2.865-2.587,2.865-4.521v-47.314
+C252.402,239.49,251.395,237.8,249.775,236.928z"/>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </address>
+      <span class="copyright">
+        Copyright © 2009–2019 City Blog LLC.
+      </span>
+    </footer>
+  </body>
+</html>
